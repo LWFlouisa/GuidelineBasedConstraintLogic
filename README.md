@@ -1,4 +1,6 @@
 # Guildeline Based Constraint Logic
+General rules about software limitations and restrictions; programs written to nudge a system in a specific direction using soft boundaries.
+
 Guideline Based Constraint Logic is a form of constraint based programming where one specifies where a program can go, and a boundary they can't cross and giving it room to experiment.
 
 Here the idea is to gently nudge a system toward the correct path, by making the incorrect path less rewarding or interesting. This is currently being tested in smaller systems, but will eventually develop solutions for more complex problem sets.
