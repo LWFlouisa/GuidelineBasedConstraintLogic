@@ -1,3 +1,5 @@
+require "NeoPathfinding"
+
 def thresholding(a, y, x)
   cognitive_threshold = 100
   probability         = a
