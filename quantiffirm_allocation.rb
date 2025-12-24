@@ -8,8 +8,9 @@ def fruit_example
     assert(:cette_pomme,            cette("pomme", "rouge"),
            :maisette_pomme,       masiette("pomme", "vert"),
            :sinon_pomme,    sinon("pomme", "rouge", "vert"),
-       
-           640, 480)
+
+           # Sega Genesis Aspect Ratio
+           320, 240)
        
            dynamic_reward_allocation
        
@@ -24,7 +25,8 @@ def bastion_de_lune
            :flambemange,     flambemange("Flamekuche",  "broiled",            "oven"),
            :bastion_de_lune, bastion_de_lune("De Nord", "de Nord", "Alsace-Lorraine"),
 
-           640, 480)
+           # Sega Genesis Aspect Ratio
+           320, 240)
 
            dynamic_reward_allocation
          
