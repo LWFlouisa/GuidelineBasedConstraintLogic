@@ -13,7 +13,7 @@ def fruit_example
        
            dynamic_reward_allocation
        
-           puts "#{$factored_labels}"
+           puts "[ #{$factored_labels}, #{$factored_probabilities} ]"
            thresholding($current_probability)
   end
 end
@@ -28,7 +28,7 @@ def bastion_de_lune
 
            dynamic_reward_allocation
          
-           puts "#{$factored_labels}"
+           puts "[ #{$factored_labels}, #{$factored_probabilities} ]"
            thresholding($current_probability)
   end
 end
