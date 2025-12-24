@@ -6,7 +6,7 @@ require "NeoPathfinding"
 def fruit_example
   2.times do
     assert(:cette_pomme,            cette("pomme", "rouge"),
-           :maisette_pomme,       masiette("pomme", "vert"),
+           :maisette_pomme,       maisette("pomme", "vert"),
            :sinon_pomme,    sinon("pomme", "rouge", "vert"),
 
            # Sega Genesis Aspect Ratio
@@ -15,13 +15,13 @@ def fruit_example
            dynamic_reward_allocation
        
            puts "[ #{$factored_labels}, #{$factored_probabilities} ]"
-           thresholding($current_probability)
+           thresholding($current_probability, 640, 480)
   end
 end
 
-def bastion_de_lune
+def lunar_base
   2.times do
-    assert(:bedohabaxiros,   bedohabaxiros("John",           150,        "Ishigotos"),
+    assert(:bedohabaxiros,   bedohabaxiros("John",          "150",       "Ishigotos"),
            :flambemange,     flambemange("Flamekuche",  "broiled",            "oven"),
            :bastion_de_lune, bastion_de_lune("De Nord", "de Nord", "Alsace-Lorraine"),
 
@@ -31,8 +31,8 @@ def bastion_de_lune
            dynamic_reward_allocation
          
            puts "[ #{$factored_labels}, #{$factored_probabilities} ]"
-           thresholding($current_probability)
+           thresholding($current_probability, 640, 480)
   end
 end
 
-bastion_de_lune; fruit_example
+lunar_base; fruit_example
