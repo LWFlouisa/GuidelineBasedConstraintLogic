@@ -138,49 +138,27 @@ sea_gargoyal = [
 ]
 ~~~
 
-## Example Output
+## Practical Examples
 ~~~
-SET MAP SIZE
-I'm confident it is not [ biological_origin These deer are of biological origin. ] as it has only 0.054450000000000005 probability.
-I'm confident it is not [ biological_origin These deer are of biological origin. ] because it has 0.10890000000000001.
-I'm confident it is not [ biological_origin These deer are of biological origin. ] because it has 0.21780000000000002.
-LEARNING ASSESSMENT
-The current map size is: 320 by 240
-The current cognitive threshold is 100
-The current odds of learning this word is 0.7717930545712262
-Therefore the approximate location of cognitive loading is the tile of 134 and 179.
-The cognitive threshold is 100 therefore the approximate location of cognitive loading is the tile of 134.40000000000146 and 179.20000000000073 is partially true.
- 
-I'm confident it is not [ biological_origin These deer are of biological origin. ] as it has only 0.054450000000000005 probability.
-I'm confident it is not [ biological_origin These deer are of biological origin. ] because it has 0.10890000000000001.
-I'm confident it is not [ biological_origin These deer are of biological origin. ] because it has 0.21780000000000002.
-I'm less unconfident it is not [ biological_origin These deer are of biological origin. ] because it has 0.43560000000000004.
-I'm sure it is [ biological_origin These deer are of biological origin. ] because it has 0.8712000000000001.
-LEARNING ASSESSMENT
-The current map size is: 320 by 240
-The current cognitive threshold is 100
-The current odds of learning this word is -2.3469827586206895
-Therefore the approximate location of cognitive loading is the tile of 57 and 76.
-The cognitive threshold is 100 therefore the approximate location of cognitive loading is the tile of 57.60000000000582 and 76.80000000000291 is not quantifiable.
- 
-I'm confident it is not [ mimetic_incursion This dialect looks for the Slenderman effect—narratives that have high 'Strength' (they sound very convincing) but zero Confidence (there is no physical evidence). It identifies Something Else trying to mask itself as 'Biological' or Baseline Reality. ] as it has only 0.054450000000000005 probability.
-I'm confident it is not [ mimetic_incursion This dialect looks for the Slenderman effect—narratives that have high 'Strength' (they sound very convincing) but zero Confidence (there is no physical evidence). It identifies Something Else trying to mask itself as 'Biological' or Baseline Reality. ] because it has 0.10890000000000001.
-I'm confident it is not [ mimetic_incursion This dialect looks for the Slenderman effect—narratives that have high 'Strength' (they sound very convincing) but zero Confidence (there is no physical evidence). It identifies Something Else trying to mask itself as 'Biological' or Baseline Reality. ] because it has 0.21780000000000002.
-I'm less unconfident it is not [ mimetic_incursion This dialect looks for the Slenderman effect—narratives that have high 'Strength' (they sound very convincing) but zero Confidence (there is no physical evidence). It identifies Something Else trying to mask itself as 'Biological' or Baseline Reality. ] because it has 0.43560000000000004.
-I'm sure it is [ mimetic_incursion This dialect looks for the Slenderman effect—narratives that have high 'Strength' (they sound very convincing) but zero Confidence (there is no physical evidence). It identifies Something Else trying to mask itself as 'Biological' or Baseline Reality. ] because it has 0.8712000000000001.
-LEARNING ASSESSMENT
-The current map size is: 320 by 240
-The current cognitive threshold is 100
-The current odds of learning this word is -2.3469827586206895
-Therefore the approximate location of cognitive loading is the tile of 57 and 76.
-The cognitive threshold is 100 therefore the approximate location of cognitive loading is the tile of 57.60000000000582 and 76.80000000000291 is not quantifiable.
- 
-I'm confident it is not [ information_sinkhole This dialect tracks the direction of reward and data flow. In your federated system, rewards are dynamic and distributed. If this label's probability rises, it indicates that all Wealth (processing priority/truth-authority) is being sucked into a single central node (The Queen or The Leader). ] as it has only 0.054450000000000005 probability.
-I'm confident it is not [ information_sinkhole This dialect tracks the direction of reward and data flow. In your federated system, rewards are dynamic and distributed. If this label's probability rises, it indicates that all Wealth (processing priority/truth-authority) is being sucked into a single central node (The Queen or The Leader). ] because it has 0.10890000000000001.
-LEARNING ASSESSMENT
-The current map size is: 320 by 240
-The current cognitive threshold is 100
-The current odds of learning this word is 0.27844541038097675
-Therefore the approximate location of cognitive loading is the tile of 187 and 249.
-The cognitive threshold is 100 therefore the approximate location of cognitive loading is the tile of 187.20000000000073 and 249.60000000000036 is largely false.
+## That
+cette("porte", "nord");   that = $that[0], $that[1]
+
+## But That
+maisette("porte", "sud"); but_that = $but_that[0], $but_that[1]
+
+## Otherwise
+sinon("porte", "oest", "est")
+
+otherwise     = $otherwise[0], $otherwise[1]
+otherwise_not = $otherwise_not[0], $otherwise_not[1], $otherwise_not[2]
+
+## Exclusive Otherwise
+ouvert("data/gbcl/cette_outcome.txt",
+       "Cette #{that[0]} est #{that[1]}",
+       
+       "data/gbcl/maisette_outcome.txt",
+       "Maisette #{but_that[0]} est #{but_that[1]}",
+       
+       "data/gbcl/sinon_outcome.txt",
+       "Sinon cette #{otherwise_not[0]} n'est #{otherwise_not[1]} ou #{otherwise_not[2]}")
 ~~~
