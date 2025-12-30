@@ -139,7 +139,7 @@ sea_gargoyal = [
 ~~~
 
 ## Practical Examples
-~~~
+~~~ruby
 ## That
 cette("porte", "nord");   that = $that[0], $that[1]
 
