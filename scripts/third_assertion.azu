@@ -1,0 +1,1 @@
+affirm(cette(pomme, jaune), maisette(pomme, vert), sinon(pomme, jaune, vert, rouge)).
